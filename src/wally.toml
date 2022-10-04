@@ -1,0 +1,11 @@
+[package]
+name = "4812571/binder-provider"
+description = "Binder registry class"
+version = "0.1.0"
+license = "MIT"
+authors = ["4812571"]
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Binder = "4812571/binder@0.1.3"

@@ -21,6 +21,8 @@ end
 
 --[=[
     @within BinderProvider
+    @param tagName string
+    @param class Class
     Create a new binder and store it in the registry
 ]=]
 
@@ -30,9 +32,9 @@ end
 
 --[=[
     @within BinderProvider
+    @param tagName string
     Returns the binder with the given name
 ]=]
-
 
 function BinderProvider:Get(tagName)
     return self._binders[tagName]
@@ -40,7 +42,7 @@ end
 
 --[=[
     @within BinderProvider
-    Starts all the binders within the BinderProvider
+    Starts all of the binders within the BinderProvider
 ]=]
 
 function BinderProvider:Start()

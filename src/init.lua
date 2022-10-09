@@ -46,7 +46,7 @@ end
 ]=]
 
 function BinderProvider:Start()
-    for _, binder in pairs(self._binders) do
+    for _, binder in self._binders do
         binder:Start()
     end
 end
@@ -57,7 +57,7 @@ end
 ]=]
 
 function BinderProvider:Destroy()
-    for _, binder in pairs(self._binders) do
+    for _, binder in self._binders do
         binder:Destroy()
     end
 

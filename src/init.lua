@@ -51,4 +51,17 @@ function BinderProvider:Start()
     end
 end
 
+--[=[
+    @within BinderProvider
+    Destroys all of the binders within the BinderProvider
+]=]
+
+function BinderProvider:Destroy()
+    for _, binder in pairs(self._binders) do
+        binder:Destroy()
+    end
+
+    self._binders = {}
+end
+
 return BinderProvider

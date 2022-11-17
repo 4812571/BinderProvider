@@ -1,4 +1,4 @@
-local Binder = require(script.Binder)
+local Binder = require(script.Parent.Binder)
 
 --[=[
     @class BinderProvider
